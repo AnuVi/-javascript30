@@ -30,9 +30,9 @@ can be written as an arrow-function:
 </li>
 <li><strong>&lt;kbd&gt;</strong> is html&mdash;tag for <em>keyboard input</em></li>
 	<li> Adding audio files I had to add .mp3 to the end
-```
-	<audio data-key="65" src="drumkit/cowbell1.aif.mp3"></audio>
-```
+<pre>
+	<audio src="drumkit/cowbell1.aif.mp3"></audio>
+</pre>
 
  </li>
 	<li><strong>As I changed the word to "javascript"</strong> I had two "A"s. It got me some time to figure out that I can't detect if it is the first A or the second A by keypress. So I had to modify my code: 
