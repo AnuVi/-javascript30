@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drumkit</title>
+</head>
+<style>
+	.lttr-bx{
+		width:90%;
+		margin:5% auto 5%;
+		display: table;
+		border-collapse:collapse;
+	}
+
+	.key{
+		display: table-cell;
+		border: 4px dotted yellow;
+		text-align: center;
+		padding:2%;
+		
+
+  /*border: .4rem solid black;*/
+  /*border-radius: .5rem;
+  margin: 1rem;*/
+  font-size: 1.5rem;
+ /* padding: 1rem .5rem;*/
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+</style>
+<body>
+	<div class="wrapper">
+		<div class="lttr-bx">
+			<div class="key" data-key="74"><kbd>j</kbd><span class="sound"></span></div>
+			<div class="key" data-key="65"><kbd>a</kbd><span class="sound"></span></div>
+			<div class="key" data-key="86"><kbd>v</kbd><span class="sound"></span></div>
+			<div class="key" data-key="65"><kbd>a</kbd><span class="sound"></span></div>
+			<div class="key" data-key="83"><kbd>s</kbd><span class="sound"></span></div>
+			<div class="key" data-key="67"><kbd>c</kbd><span class="sound"></span></div>
+			<div class="key" data-key="82"><kbd>r</kbd><span class="sound"></span></div>
+			<div class="key" data-key="73"><kbd>i</kbd><span class="sound"></span></div>
+			<div class="key" data-key="80"><kbd>p</kbd><span class="sound"></span></div>
+			<div class="key" data-key="84"><kbd>t</kbd><span class="sound"></span></div>
+			<audio data-key="74" src="drumkit/big-burundi-01.mp3"></audio>
+	<audio data-key="65" src="drumkit/cowbell1.aif.mp3"></audio>
+	<audio data-key="86" src="drumkit/kick-punch.wav.mp3"></audio>
+	<audio data-key="65" src="drumkit/cowbell1.aif.mp3"></audio>
+	<audio data-key="83" src="drumkit/cymbal08.aif.mp3"></audio>
+	<audio data-key="67" src="drumkit/clap1.aif.mp3"></audio>
+	<audio data-key="82" src="drumkit/arabicperc3-14.wav.mp3"></audio>
+	<audio data-key="73" src="drumkit/arabicperc3-1.wav.mp3"></audio>
+	<audio data-key="80" src="drumkit/arabicperc3-10.wav.mp3"></audio>
+	<audio data-key="84" src="drumkit/daibyoshi-B2.wav.mp3"></audio>
+		</div>
+	</div>
+	
+	<div><a href="http://sampleswap.org/filebrowser-new.php?d=DRUMS+(FULL+KITS)%2F" rel="external" title="Sounds from sampeswap.org">Sounds from sampeswap.org</a></div>
+	<script>
+	
+  function removeTransition(e){
+		if(e.propertyName !=='transform') return; // skip it if it's not a transform
+		this.classList.remove('playing');
+	}
+
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+ 
+
+    if(!audio) return; //stop the function from running all together
+		//rewind it back if it already plays then the key is pressed
+		audio.currentTime = 0;
+		audio.play();
+    // as we have two A-s in the word "javascript", add class playing both of them
+    if(e.keyCode =="65"){
+         // get all letter A                  
+         allAs = document.querySelectorAll(`div[data-key="${e.keyCode}"]`);
+         // now we have to add class each of them
+         //long  function to test
+         /*allAs.forEach(function(element) {
+             element.classList.add('playing');
+        });  */
+         // arrow-function
+        allAs.forEach(element => element.classList.add('playing'));
+         
+    } else {
+       key.classList.add('playing');
+    }
+		
+  }
+
+  const keys = document.querySelectorAll('.key');
+	//console.log(keys);
+	keys.forEach(key=>key.addEventListener('transitionend', removeTransition));
+	window.addEventListener('keydown',playSound);
+	</script>
+</body>
+</html>
