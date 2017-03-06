@@ -1,5 +1,7 @@
 The purpose of these posts is to reflect my troubles and moments of ahhaa.
 
+<a href="http://www.anuvi.me/javascript30/day1.html" target="_blank" title="Day 1" rel="external">Demo</a>
+
 <strong>Lessons from Day 1</strong>:
 <ol>
 	<li><strong>const</strong>&ndash; so far I've used only <em>var</em> to define variables. <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const" target="_blank" title="MDN source" rel="external">Their values cannot be changed or redeclared</a>.</li>
