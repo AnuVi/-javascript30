@@ -31,7 +31,9 @@ can be written as an arrow-function:
 <li><strong>&lt;kbd&gt;</strong> is html&mdash;tag for <em>keyboard input</em></li>
 	<li> Adding audio files I had to add .mp3 to the end
 ```html
+<pre>
 	<audio data-key="65" src="drumkit/cowbell1.aif.mp3"></audio>
+</pre>
 ```
 
  </li>
