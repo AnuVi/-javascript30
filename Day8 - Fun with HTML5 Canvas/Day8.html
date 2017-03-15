@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+const canvas = document.querySelector('#draw');
+
+//context
+const ctx = canvas.getContext('2d');
+console.log(canvas);
+//size of the windows
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+console.log(canvas.width);
+//stroke color, end and start point
+ctx.strokeStyle = '#BADA55;';
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = '100';
+// ctx.globalCompositeOperation = 'multiply'; //PS blur mode
+
+//if the curosor is not pressed it wont't draw
+let isDrawing = false;
+
+//every line needs starting X and Y and ending point X and Y
+let lastX = 0;
+let lastY = 0;
+let hue = 0;
+let direction = true;
+
+function draw(e){
+
+	//console.log(isDrawing);
+	if(!isDrawing) return; // stop function when mouse is not down
+	//console.log(e);
+ 	//hue
+ 	ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; //hue,saturation,lightness
+ 	//ctx.lineWidth = hue;
+	// drawing a path
+	ctx.beginPath();
+	//start from
+	ctx.moveTo(lastX,lastY);
+	//go to
+	ctx.lineTo(e.offsetX, e.offsetY); // values can be seen in console - MouseEvent - carret
+
+	// we have to update lastX and lastY, otherwise starting point will be always 0,0
+	
+	lastX = e.offsetX;
+	lastY = e.offsetY;
+	ctx.stroke();
+	[lastX, lastY] = [e.offsetX, e.offsetY];
+	//adding values to hue
+	hue++;
+	//if it is equal or bigger 360 set it to 0 again
+	if(hue >=360){
+		hue=0;
+	}
+
+	//change lineWidth 
+	if(ctx.lineWidth >= 200 || ctx.lineWidth <=1){
+			direction = !direction; //flips direction
+			console.log(direction);
+			
+
+	}
+
+	if(direction){
+		ctx.lineWidth++;
+	} else {
+		ctx.lineWidth--;
+	} 
+
+	console.log(direction);
+	
+}
+
+canvas.addEventListener('mousemove', draw );
+/* keeping like that - starting point will be always 0,0 and line is aleways one line
+canvas.addEventListener('mousedown', ()=> isDrawing = true );*/
+canvas.addEventListener('mousedown',(e)=> {
+	isDrawing = true;
+	[lastX, lastY] = [e.offsetX, e.offsetY];
+
+});
+canvas.addEventListener('mouseup', ()=> isDrawing = false );
+canvas.addEventListener('mouseout', ()=> isDrawing = false );
+</script>
+<style>
+  html, body {
+    margin:0;
+  }
+</style>
+
+</body>
+</html>
