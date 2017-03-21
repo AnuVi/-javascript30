@@ -1,7 +1,7 @@
-<a href="http://www.anuvi.me/javascript30/day8.html" target="_blank" title="Demo-Day 8" rel="external">Demo - Day 8</a>
+<a href="http://www.anuvi.me/javascript30/day8.html" target="_blank" title="Demo-Day 8" rel="external">Demo</a>
 <ol>
 
-    	<li><strong>Organizing your variables and values as an array:</strong>
+<li><strong>Organizing your variables and values as an array:</strong>
 <pre>
 [lastX, lastY] = [e.offsetX, e.offsetY];
 </pre>
