@@ -14,7 +14,7 @@ lastY = e.offsetY;
 
 </li>
 	<li><strong>hsl</strong>&mdash; h is for hue (between 0-360), s is for saturation and l is for lightness.</li>
-	<li><strong>strokeStyle and lineWidth</strong> It's <em>ctx.strokeStyle</em> for color, but <em>ctx.lineWidth </em>for width.</li>
+	<li><strong>strokeStyle and lineWidth</strong> - tt's <em>ctx.strokeStyle</em> for color, but <em>ctx.lineWidth </em>for width.</li>
 	<li><strong>direction != direction</strong> and <strong>direction = !direction</strong> - let's assume that direction is true:
 <pre>
 direction != direction // true isn't equal to true
@@ -25,7 +25,7 @@ direction = !direction  // change direction's value to opposite - if true, now b
 
 </li>
 	<li><strong>Debugging:</strong><ul>
-	<li><strong>console.log(canvas)</strong>- as it didn't do nothing and no spelling mistakes so far - turned out I had accidentally deleted the '</script>' tag.</li>
+	<li><strong>console.log(canvas)</strong>- as it didn't do anything and no spelling mistakes so far - turned out I had accidentally deleted the </script>-tag.</li>
 	<li><strong>inside draw()</strong> - <em>console.log(e) </em>after the condition, if I console it before it gives me true and false, but I only want one of them.</li>
 	<li><strong>calling out draw function</strong> - <em>addEventListener('mousemove')</em> worked but nothing else  didn't care if it was false or true. Possible ways to debug:<pre>
 inside function draw(){
