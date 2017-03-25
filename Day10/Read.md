@@ -1,5 +1,7 @@
 <a href="http://www.anuvi.me/javascript30/day10.html" target="_blank" title="Demo-Day 10" rel="external">Demo - Day 10</a>
+<br>
 <strong>Lessons from Day 10</strong>:
+<ol>
 <li>
 <strong>let var</strong> - another type of variable in JavaScript. <em>Variables declared by let have as their scope the block in which they are defined, as well as in any contained sub-blocks . In this way, let works very much like var. The main difference is that the scope of a var variable is the entire enclosing function</em>&mdash;<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let" target="_blank" title="MDN link">MDN link</a>
 </li>
