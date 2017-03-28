@@ -43,8 +43,8 @@ Some console tricks (on Win Ctrl+Shift+I)
 <li><strong>Clearing console&mdash;console.clear()</strong>&mdash; simpliest way to clear console.
 </li>
 <li><strong>Testing&mdash;console.assert()</strong> - <em>returns only if the statemeny is false</em><pre>
-    console.assert (1===1, 'That is true'); // won't show anything
-    console.assert (1===2, 'That is wrong'); //shows text
+   console.assert (1===1, 'That is true'); // won't show anything
+   console.assert (1===2, 'That is wrong'); //shows text
 
     const p = document.querySelector('p');
     console.assert (p.classList.contains('whatever'), 'No such class!');
