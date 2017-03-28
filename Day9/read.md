@@ -76,7 +76,7 @@ dogs.forEach(dog => {
 
     });
 </pre>
-Hugo is clicked open to show provided information:
+Hugo is clicked open to show provided information:<br>
 <a href="http://www.anuvi.me/blog/wp-content/uploads/2017/03/console_group_collapsed.jpg" rel="attachment wp-att-430"><img src="http://www.anuvi.me/blog/wp-content/uploads/2017/03/console_group_collapsed.jpg" alt="console_group_collapsed" width="403" height="76" class="aligncenter size-full wp-image-430" /></a>
 </li>
 <li><strong>Counting&mdash;console.count()</strong><pre>
