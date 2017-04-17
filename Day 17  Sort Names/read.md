@@ -1,5 +1,4 @@
 <strong>Lessons from Day 17 &mdash; a/an/the</strong>:
-<a href="http://www.anuvi.me/javascript30/day17.html" target="_blank" title="Demo-Day 17" rel="external">Demo - Day 17</a>
 <ol>
 <li><strong>Regex to replace a/an/the with ' '</strong>
 <pre>
@@ -34,14 +33,14 @@ const sortedBands = bands.sort((a,b) => strip(a) > strip(b) ? 1 : -1);
 	<li><strong>Output with/without commas</strong>
 <pre>
 sortedBands.map(band => `<li>${band}</li>`);
+</pre>
 //will give you commas after the names:
 ["<li>Anywhere But Here</li>", "<li>The Bled</li>", "<li>Counterparts</li>", "<li>The Devil Wears Prada</li>", "<li>The Midway State</li>", "<li>Norma Jean</li>", "<li>Oh, Sleeper</li>", "<li>An Old Dog</li>", "<li>Pierce the Veil</li>", "<li>The Plot in You</li>", "<li>Say Anything</li>", "<li>A Skylit Drive</li>", "<li>We Came as Romans</li>"]
-</pre>
 <pre>
 sortedBands.map(band => `<li>${band}</li>`).join('');
+</pre>
 //will give
 <li>Anywhere But Here</li><li>The Bled</li><li>Counterparts</li><li>The Devil Wears Prada</li><li>The Midway State</li><li>Norma Jean</li><li>Oh, Sleeper</li><li>An Old Dog</li><li>Pierce the Veil</li><li>The Plot in You</li><li>Say Anything</li><li>A Skylit Drive</li><li>We Came as Romans</li>
-</pre>
 
 
 
