@@ -3,9 +3,7 @@
 <li><strong>Regex to replace a/an/the with ' '</strong>
 <pre>
 function strip(bandName){
-
   return bandName.replace(/^(a |the |an )/i,'').trim();
-
 }
 </pre>
 </li>
@@ -15,7 +13,7 @@ return strip(a) > strip(b) ? 1 : -1
 </pre>
 
 </li>
-	<li><strong>How to write a function</strong>in three ways:<pre>
+<li><strong>How to write a function</strong>in three ways:<pre>
 //first
 const sortedBands = bands.sort(function(a,b){
  return strip(a) > strip(b) ? 1 : -1
@@ -33,14 +31,17 @@ const sortedBands = bands.sort((a,b) => strip(a) > strip(b) ? 1 : -1);
 	<li><strong>Output with/without commas</strong>
 <pre>
 sortedBands.map(band => `<li>${band}</li>`);
+/*will give you commas after the names:
+["<li>Anywhere But Here</li>", "<li>The Bled</li>", "<li>Counterparts</li>", "<li>The Devil Wears Prada</li>", "<li>The Midway State</li>", "<li>Norma Jean</li>", "<li>Oh, Sleeper</li>", "<li>An Old Dog</li>", "<li>Pierce the Veil</li>", "<li>The Plot in You</li>", "<li>Say Anything</li>", "<li>A Skylit Drive</li>", "<li>We Came as Romans</li>"]*/
 </pre>
-//will give you commas after the names:
-["<li>Anywhere But Here</li>", "<li>The Bled</li>", "<li>Counterparts</li>", "<li>The Devil Wears Prada</li>", "<li>The Midway State</li>", "<li>Norma Jean</li>", "<li>Oh, Sleeper</li>", "<li>An Old Dog</li>", "<li>Pierce the Veil</li>", "<li>The Plot in You</li>", "<li>Say Anything</li>", "<li>A Skylit Drive</li>", "<li>We Came as Romans</li>"]
+
 <pre>
 sortedBands.map(band => `<li>${band}</li>`).join('');
-</pre>
-//will give
+/*will give
 <li>Anywhere But Here</li><li>The Bled</li><li>Counterparts</li><li>The Devil Wears Prada</li><li>The Midway State</li><li>Norma Jean</li><li>Oh, Sleeper</li><li>An Old Dog</li><li>Pierce the Veil</li><li>The Plot in You</li><li>Say Anything</li><li>A Skylit Drive</li><li>We Came as Romans</li>
+*/
+</pre>
+
 
 
 
