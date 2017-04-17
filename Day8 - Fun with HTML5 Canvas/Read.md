@@ -1,4 +1,5 @@
 <a href="http://www.anuvi.me/javascript30/day8.html" target="_blank" title="Demo-Day 8" rel="external">Demo</a>
+<br>
 <strong>Lessons from Day 8</strong>:
 <ol>
 
