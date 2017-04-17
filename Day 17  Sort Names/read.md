@@ -1,3 +1,5 @@
+<a href="http://www.anuvi.me/javascript30/day17.html" target="_blank" title="Demo-Day 17" rel="external">Demo</a>
+<br>
 <strong>Lessons from Day 17 &mdash; a/an/the</strong>:
 <ol>
 <li><strong>Regex to replace a/an/the with ' '</strong>
