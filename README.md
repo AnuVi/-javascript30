@@ -16,3 +16,6 @@ Day 1:
   <br>
  Day 17: 
  <a href="http://www.anuvi.me/javascript30/day17.html" target="_blank" title="Day 17" rel="external">Demo</a> - <a href="http://www.anuvi.me/blog/javascript30-day-17/" title="blog" rel="external">Notes</a> -  <a href="https://github.com/AnuVi/-javascript30/blob/master/Day%2017%20%20Sort%20Names/day17.html" target="_blank" title="Day17-Code" rel="internal">Code</a>
+  <br>
+ Day 28: 
+ <a href="http://www.anuvi.me/javascript30/day28.html" target="_blank" title="Day 28" rel="external">Demo</a> - <a href="http://www.anuvi.me/blog/javascript30day-28//" title="blog" rel="external">Notes</a> -  <a href="https://github.com/AnuVi/-javascript30/blob/master/Day28-Video%20Scrubber/day28.html" target="_blank" title="Day28-Code" rel="internal">Code</a>
