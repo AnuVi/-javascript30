@@ -1,5 +1,5 @@
-The purpose of these posts is to reflect my troubles and moments of ahhaa.
-<strong>Lessons from Day 28 &mdash; Video Speed Scrubber</strong>:
+The purpose of these posts is to reflect my troubles and moments of ahhaa.<br>
+<strong>Lessons from Day 28 &mdash; Video Speed Scrubber</strong><br>
 <a href="http://www.anuvi.me/javascript30/day28.html" target="_blank" title="Demo-Day 28" rel="external">Demo</a>
 <ol>
 	<li><strong>This tutorial won't work with YouTube videos because you can't put embeded video into video-tag.</strong></li>
