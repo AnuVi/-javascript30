@@ -1,6 +1,8 @@
 
-The purpose of these posts is to reflect my troubles and moments of ahhaa.<br>
-<strong>Lessons from Day 15 &mdash; LocalStorage and EventDelegation</strong>:<br>
+The purpose of these posts is to reflect my troubles and moments of ahhaa.
+
+<strong>Lessons from Day 15 &mdash; LocalStorage and EventDelegation</strong>:
+
 <a href="http://www.anuvi.me/javascript30/day15.html" target="_blank" title="Demo-Day 15 rel="external">Demo - Day 15</a>
 <ol>
 		<li><strong>Form and submit: </strong> if it is form you should listen to <em>submit</em>&mdash;event and not click.</li>
