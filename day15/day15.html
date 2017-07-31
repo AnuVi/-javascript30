@@ -128,10 +128,10 @@
   const plates=[];
   const allChecked = document.querySelector('.js-all');
   var listLength = items.length;
-  console.log(listLength);
+  //console.log(listLength);
   var allCheckedText = document.querySelector('.js-all-text');
   var checkedText;
-  console.log(allCheckedText );
+  //console.log(allCheckedText );
   allCheckedText.innerHTML=JSON.parse( localStorage.getItem('allCheckedText'));
   var showCheck = JSON.parse(localStorage.getItem('allChecked')) ;
   // setting allchecked checked-attribute value
@@ -209,10 +209,10 @@
   function checkAll(e){
 
    if(this.checked){
-    console.log("jah")
+    //console.log("jah")
     this.setAttribute("checked", "checked");
     checkedText = "Uncheck all";
-      console.log( items);
+      //console.log( items);
     items.forEach(function(item){
        item.done = true;
     });
@@ -220,7 +220,7 @@
   
 
    } else {
-    console.log("ei");
+    //console.log("ei");
     checkedText = "Check all";
     items.forEach(function(item){
        item.done = false;
@@ -231,7 +231,7 @@
    }
 
    
-    console.log(h);
+    //console.log(h);
     allCheckedText.innerHTML = checkedText;
     localStorage.setItem('allChecked', JSON.stringify(h));
     localStorage.setItem('items', JSON.stringify(items));
