@@ -4,8 +4,6 @@ The purpose of these posts is to reflect my troubles and moments of ahhaa.
 
 <strong>Lessons from Day 7</strong>:
 <ol>
-		
-
 	<li><strong>Array.prototype.some();</strong> is there at least one match? Returns <em>true</em> or <em>false</em>.
 
 </li>
