@@ -8,6 +8,9 @@ Day 1:
 Day 2: 
  <a href="http://www.anuvi.me/javascript30/day2.html" target="_blank" title="Day 2" rel="external">Demo</a> - <a href="http://www.anuvi.me/blog/javascript30day-2/" title="blog" rel="external">Notes</a> -  <a href="https://github.com/AnuVi/-javascript30/blob/master/Day%202%20-%20CSS%20-%20JS%20Clock/day2.html" target="_blank" title="Day2-Code" rel="internal">Code</a>
  <br>
+ Day 3: 
+ <a href="http://www.anuvi.me/javascript30/day3.html" target="_blank" title="Day 3" rel="external">Demo</a> - <a href="http://www.anuvi.me/blog/javascript30day-3/" title="blog" rel="external">Notes</a> -  <a href="https://github.com/AnuVi/-javascript30/blob/master/Day%203%20-%20CSS%20variables/index.html" target="_blank" title="Day3-Code" rel="internal">Code</a>
+ <br>
  Day 8: 
  <a href="http://www.anuvi.me/javascript30/day8.html" target="_blank" title="Day 8" rel="external">Demo</a> - <a href="http://www.anuvi.me/blog/javascript30-day-8/" title="blog" rel="external">Notes</a> -  <a href="https://github.com/AnuVi/-javascript30/blob/master/Day8%20-%20Fun%20with%20HTML5%20Canvas/Day8.html" target="_blank" title="Day8-Code" rel="internal">Code</a>
  <br>
