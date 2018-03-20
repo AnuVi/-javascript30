@@ -22,14 +22,14 @@ p {
 </pre>
 
 </li>
-	<li><strong>:root</strong> is the deepest level you can go.
+<li>
+	<strong>:root</strong> is the deepest level you can go.
 </li>
-
-	<li>
+<li>
 If you want update your e.g. style attribute according to input via javaScript <strong>variable and name should have the same name, otherwise it wont work:</strong>
-<pre>
-<input id="base" type="color" name="basecolor" value="#ffc600">
-</pre>
+
+	<input id="base" type="color" name="basecolor" value="#ffc600">
+
 
 <em>--basecolor:#ffc600;</em>
 </li>
