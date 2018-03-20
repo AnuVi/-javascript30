@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day 3 - CSS Variables and JS</title>
+</head>
+<body>
+
+		<p class="text--center highlight"><a href="https://javascript30.com/" target="_blank" title="JavaScript30" rel="external">#JavaScript30</a>Update CSS Variables with JS</p>
+  <div class="tsk-wrp">
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="basecolor" value="#ffc600">
+  </div>
+
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+  <style>
+
+  :root{
+
+    --basecolor:#ffc600;
+    --spacing: 10px;
+    --blur:10px;
+  }
+
+  img{
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--basecolor);
+  }
+
+  .highlight{
+    color:var(--basecolor);
+  }
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+    /*body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }*/
+
+    .tsk-wrp {
+      width:80%;
+      /*background: var(--basecolor);*/
+      margin:0 auto;
+      text-align: center;
+      padding:1em;
+
+    }
+    .controls {
+      margin-bottom: 50px;
+    }
+    input {
+      width:100px;
+    }
+  </style>
+  </div>
+	<script>
+	const inputs = document.querySelectorAll('.controls input');
+  //console.log(inputs);
+
+  function handleInputs(){
+      //console.log(this.value);
+      const suffix = this.dataset.sizing || "";
+      //console.log(suffix);
+      
+      if(this.name=="basecolor"){
+        document.querySelector('.highlight').style.setProperty(`--${this.name}`, this.value);
+        document.documentElement.style.setProperty(`--${this.name}`, this.value);
+      } else {
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      }
+  }
+
+  inputs.forEach(input => input.addEventListener('change', handleInputs));
+  inputs.forEach(input => input.addEventListener('mousemove', handleInputs));     
+
+       
+     
+  
+	</script>
+	
+  
+
+ 
+   
+ 
+
+</body>
+</html>
