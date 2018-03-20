@@ -22,7 +22,8 @@ p {
 </pre>
 
 </li>
-	<li><strong>:root</strong> is the deepest level you can go.</li>
+	<li><strong>:root</strong> is the deepest level you can go.
+</li>
 
 	<li>
 If you want update your e.g. style attribute according to input via javaScript <strong>variable and name should have the same name, otherwise it wont work:</strong>
