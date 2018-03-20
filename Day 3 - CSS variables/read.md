@@ -26,11 +26,11 @@ p {
 
 	<li>
 If you want update your e.g. style attribute according to input via javaScript <strong>variable and name should have the same name, otherwise it wont work:</strong>
-<pre>
-<input id="base" type="color" name="basecolor" value="#ffc600">
-</pre>
 
-<em>- -basecolor:#ffc600;</em>
+<input id="base" type="color" name="basecolor" value="#ffc600">
+
+
+<em>--basecolor:#ffc600;</em>
 </li>
 	<li><strong>NodeList vs array</strong>
 <em>document.querySelectorAll</em> gives <em>NodeList</em>. The difference between <em>NodeList</em> and <em>array</em> is that <em>array</em> gives you all kinds and longer <em>list of methods</em> like map,reduce.
