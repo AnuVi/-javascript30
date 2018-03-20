@@ -26,9 +26,9 @@ p {
 
 	<li>
 If you want update your e.g. style attribute according to input via javaScript <strong>variable and name should have the same name, otherwise it wont work:</strong>
-
+<pre>
 <input id="base" type="color" name="basecolor" value="#ffc600">
-
+</pre>
 
 <em>--basecolor:#ffc600;</em>
 </li>
